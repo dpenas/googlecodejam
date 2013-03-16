@@ -15,10 +15,8 @@ def readFile(nameFile):
 	i = 0
 	f = open(nameFile, 'r')
 	filetext = f.readline()
-	while filetext:
+	for a in range(int(filetext)):
 		i +=1
 		filetext = f.readline()
-		print(filetext)
-		if (filetext != "\n"):
-			comparewords(filetext, i)
+		comparewords(filetext, i)
 	f.close()
